@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="CustomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XbP-ea-nzr">
+                        <rect key="frame" x="20" y="0.0" width="281" height="100"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9ay-Kr-Qyd">
+                            <size key="itemSize" width="75" height="75"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="搜索-箭头左" translatesAutoresizingMaskIntoConstraints="NO" id="Jfc-C6-iu7">
+                        <rect key="frame" x="0.0" y="21" width="20" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Rp2-tP-PL9"/>
+                            <constraint firstAttribute="height" constant="65" id="upE-br-hXM"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="搜索-箭头右" translatesAutoresizingMaskIntoConstraints="NO" id="tGb-n8-FzK">
+                        <rect key="frame" x="300" y="21" width="20" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="7eT-YK-Dbv"/>
+                            <constraint firstAttribute="height" constant="65" id="7zl-r6-uPA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="tGb-n8-FzK" secondAttribute="trailing" constant="-8" id="5WT-1f-yCR"/>
+                    <constraint firstItem="Jfc-C6-iu7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="btw-Ce-UJk"/>
+                    <constraint firstItem="XbP-ea-nzr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="cIO-g2-XUx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XbP-ea-nzr" secondAttribute="bottom" constant="-1" id="cWJ-Eg-e1X"/>
+                    <constraint firstItem="Jfc-C6-iu7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="jTR-cZ-lqx"/>
+                    <constraint firstItem="tGb-n8-FzK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="jqH-2P-BmF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XbP-ea-nzr" secondAttribute="trailing" constant="11" id="nL1-t8-yh5"/>
+                    <constraint firstItem="XbP-ea-nzr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="xXd-Hu-N0W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoryCollectionView" destination="XbP-ea-nzr" id="95u-78-zBA"/>
+            </connections>
+            <point key="canvasLocation" x="247" y="111"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="搜索-箭头右" width="33" height="131"/>
+        <image name="搜索-箭头左" width="33" height="131"/>
+    </resources>
+</document>
