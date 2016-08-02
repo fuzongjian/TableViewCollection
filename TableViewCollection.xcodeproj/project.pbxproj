@@ -22,6 +22,8 @@
 		9B11631B1D4F318200C05439 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1163191D4F318200C05439 /* CustomCollectionViewCell.xib */; };
 		9B11631E1D4F376800C05439 /* CustomSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11631D1D4F376800C05439 /* CustomSectionHeaderView.m */; };
 		9B1163201D4F377900C05439 /* CustomSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B11631F1D4F377900C05439 /* CustomSectionHeaderView.xib */; };
+		9B1163241D503CA600C05439 /* CategoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1163231D503CA600C05439 /* CategoryItem.m */; };
+		9B1163271D50425600C05439 /* SearchConditonItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1163261D50425600C05439 /* SearchConditonItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,10 @@
 		9B11631C1D4F376800C05439 /* CustomSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSectionHeaderView.h; sourceTree = "<group>"; };
 		9B11631D1D4F376800C05439 /* CustomSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSectionHeaderView.m; sourceTree = "<group>"; };
 		9B11631F1D4F377900C05439 /* CustomSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSectionHeaderView.xib; sourceTree = "<group>"; };
+		9B1163221D503CA600C05439 /* CategoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryItem.h; sourceTree = "<group>"; };
+		9B1163231D503CA600C05439 /* CategoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryItem.m; sourceTree = "<group>"; };
+		9B1163251D50425600C05439 /* SearchConditonItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchConditonItemView.h; sourceTree = "<group>"; };
+		9B1163261D50425600C05439 /* SearchConditonItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchConditonItemView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 			children = (
 				9B1162D51D4F210100C05439 /* AppDelegate.h */,
 				9B1162D61D4F210100C05439 /* AppDelegate.m */,
+				9B1163211D503C8400C05439 /* Models */,
 				9B11630C1D4F311E00C05439 /* ViewControllers */,
 				9B11630A1D4F311E00C05439 /* Resources */,
 				9B11630F1D4F311E00C05439 /* Views */,
@@ -187,8 +194,19 @@
 				9B11631C1D4F376800C05439 /* CustomSectionHeaderView.h */,
 				9B11631D1D4F376800C05439 /* CustomSectionHeaderView.m */,
 				9B11631F1D4F377900C05439 /* CustomSectionHeaderView.xib */,
+				9B1163251D50425600C05439 /* SearchConditonItemView.h */,
+				9B1163261D50425600C05439 /* SearchConditonItemView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9B1163211D503C8400C05439 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B1163221D503CA600C05439 /* CategoryItem.h */,
+				9B1163231D503CA600C05439 /* CategoryItem.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,8 +344,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B1163111D4F311E00C05439 /* ViewController.m in Sources */,
+				9B1163271D50425600C05439 /* SearchConditonItemView.m in Sources */,
 				9B1162D71D4F210100C05439 /* AppDelegate.m in Sources */,
 				9B11631E1D4F376800C05439 /* CustomSectionHeaderView.m in Sources */,
+				9B1163241D503CA600C05439 /* CategoryItem.m in Sources */,
 				9B1163151D4F316000C05439 /* CustomTableViewCell.m in Sources */,
 				9B1162D41D4F210100C05439 /* main.m in Sources */,
 				9B11631A1D4F318200C05439 /* CustomCollectionViewCell.m in Sources */,

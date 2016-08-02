@@ -12,6 +12,9 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
+//    NSLog(@"%@",NSStringFromCGRect(self.contentView.frame));
+    
     // Initialization code
 }
 
